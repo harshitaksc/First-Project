@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body {
+    display: flow-root;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    /* margin: 10px; */
+}
+
+nav div {
+    margin: 10px;
+}
+
+section {
+    margin: 10px;
+}
+
+.nav-items a {
+    justify-content: space-between;
+    margin: 1vw;
+}
+
+.hero,
+footer {
+    background-color: #1F2937;
+}
+
+.logo {
+    font-size: 24px;
+    color: #f9faf8;
+    
+}
+
+.column-left {
+    width: 40%;
+    margin-left: 10px;
+}
+
+.column-left .left {
+    margin: 10px;
+    color: #e5e7eb;
+}
+
+.column-left h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.column-left p,
+.nav-items a {
+    font-size: 18px;
+    color: #e5e7eb;
+
+}
+
+.hero-container {
+    display: flex;
+}
+
+.hero-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.column-right {
+    height: 20rem;
+    width: 50%;
+    overflow: hidden;
+    /* margin-bottom: 10px; */
+    /* margin-left: 10%; */
+    margin: auto 10px auto auto;
+    align-items: center;
+}
+
+#herobtn {
+background-color: #3882f6;
+padding: 1rem 3rem;
+font-size: 1rem;
+font-weight: 900;
+border: none;
+cursor: pointer;
+margin-bottom: 1rem;
+border-radius: 10px;
+}
+
+
+
+.information {
+    background-color: hsl(90, 17%, 98%);
+    padding: 1rem;
+    margin: auto;
+ 
+}
+
+.infoheading {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    margin: 2rem;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+.information-container {
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.box {
+    border: 5px solid #3882f6;
+    width: 100px; /* Box width */
+    height: 100px; /* Box height */
+    background-color: transparent; /* Box color */
+    border-radius: 10px; /* Rounded corners */
+    /* margin: 0 auto; Center the box horizontally */
+}
+
+.item {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    color: rgb(107, 107, 107);
+}
