@@ -66,10 +66,8 @@ footer {
 }
 
 .hero-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 95vh;
-    padding: 3rem calc((100vw - 1300px)/2);
+    display: flex;
+    align-items: center;
 }
 
 .hero-image {
@@ -101,7 +99,12 @@ footer {
 
 
 
-.information,
+.information {
+    background-color: hsl(90, 17%, 98%);
+    padding: 6rem 26rem;
+    margin: auto;
+}
+
 .CTAbox {
     background-color: hsl(90, 17%, 98%);
     padding: 6rem;
@@ -184,11 +187,11 @@ footer {
 }
 
 .CTA-container {
-    padding: 5% 10%;
+    padding: 3% 10%;
     border-radius: 20px;
     background-color: #3882f6;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -199,11 +202,10 @@ footer {
     font-weight: 900;
     border: none;
     cursor: pointer;
-    margin-bottom: 1rem;
     border-radius: 10px;
     color: #e5e7eb;
     border: 2px solid #e5e7eb;
-    margin-top: 10px;
+
 }
 
 footer {
