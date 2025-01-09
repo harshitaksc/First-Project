@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -15,6 +14,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 80px;
+    padding: 6rem;
     /* margin: 10px; */
 }
 
@@ -39,7 +39,7 @@ footer {
 .logo {
     font-size: 24px;
     color: #f9faf8;
-    
+
 }
 
 .column-left {
@@ -66,7 +66,10 @@ footer {
 }
 
 .hero-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px)/2);
 }
 
 .hero-image {
@@ -86,23 +89,24 @@ footer {
 }
 
 #herobtn {
-background-color: #3882f6;
-padding: 1rem 3rem;
-font-size: 1rem;
-font-weight: 900;
-border: none;
-cursor: pointer;
-margin-bottom: 1rem;
-border-radius: 10px;
+    background-color: #3882f6;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    border-radius: 10px;
 }
 
 
 
-.information {
+.information,
+.CTAbox {
     background-color: hsl(90, 17%, 98%);
-    padding: 1rem;
+    padding: 6rem;
     margin: auto;
- 
+
 }
 
 .infoheading {
@@ -119,16 +123,20 @@ border-radius: 10px;
 .information-container {
     display: flex;
     justify-content: space-between;
-    
+
 
 }
 
 .box {
     border: 5px solid #3882f6;
-    width: 100px; /* Box width */
-    height: 100px; /* Box height */
-    background-color: transparent; /* Box color */
-    border-radius: 10px; /* Rounded corners */
+    width: 100px;
+    /* Box width */
+    height: 100px;
+    /* Box height */
+    background-color: transparent;
+    /* Box color */
+    border-radius: 10px;
+    /* Rounded corners */
     /* margin: 0 auto; Center the box horizontally */
 }
 
@@ -141,4 +149,65 @@ border-radius: 10px;
     text-align: center;
     gap: 10px;
     color: rgb(107, 107, 107);
+}
+
+.quote {
+    background-color: #e5e7eb;
+    margin: auto;
+    text-align: center;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.quotetext {
+    color: #1f2937;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 36px;
+}
+
+.authorname {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+
+}
+
+.CTAbox {
+    background-color: #f9faf8;
+    color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+}
+
+.CTA-container {
+    padding: 5% 10%;
+    border-radius: 20px;
+    background-color: #3882f6;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.CTAbtn {
+    background-color: transparent;
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    font-weight: 900;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    color: #e5e7eb;
+    border: 2px solid #e5e7eb;
+    margin-top: 10px;
+}
+
+footer {
+    color: #ffffff;
+    text-align: center;
+    padding: 2%;
 }
